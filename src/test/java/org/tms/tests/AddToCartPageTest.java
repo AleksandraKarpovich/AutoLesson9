@@ -22,6 +22,7 @@ public class AddToCartPageTest extends BaseTest{
 
     @Test
     public void addToCartTest(){
+        inventoryPage.waitButtonIsLoaded(); // Lesson 11: Loadable Page
         inventoryPage.addToCart();
         inventoryPage.openCart();
         cartPage = new CartPage();

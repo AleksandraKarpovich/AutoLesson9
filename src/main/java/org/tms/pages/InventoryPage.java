@@ -26,4 +26,10 @@ public class InventoryPage extends BasePage{
         return buttonAddToCart.getText();
     }
 
+    // Lesson 11: Loadable Page
+    public InventoryPage waitButtonIsLoaded() {
+        waitVisibilityOf(buttonAddToCart);
+        return this;
+    }
+
 }
