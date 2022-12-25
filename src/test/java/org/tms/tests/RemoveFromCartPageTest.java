@@ -1,5 +1,6 @@
 package org.tms.tests;
 
+import io.qameta.allure.Description;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -22,6 +23,7 @@ public class RemoveFromCartPageTest extends BaseTest{
 
 
     @Test
+    @Description("Remove product from Cart Page")
     public void removeFromCartTest(){
         inventoryPage.addToCart();
         inventoryPage.openCart();
