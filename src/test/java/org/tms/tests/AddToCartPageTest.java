@@ -1,5 +1,6 @@
 package org.tms.tests;
 
+import io.qameta.allure.Description;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -21,6 +22,7 @@ public class AddToCartPageTest extends BaseTest{
     }
 
     @Test
+    @Description("Add product to Cart")
     public void addToCartTest(){
         inventoryPage.waitButtonIsLoaded(); // Lesson 11: Loadable Page
         inventoryPage.addToCart();

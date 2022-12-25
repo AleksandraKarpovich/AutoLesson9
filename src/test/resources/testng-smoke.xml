@@ -9,6 +9,10 @@
     <test name="Cart Page Test">
         <classes>
             <class name="org.tms.tests.AddToCartPageTest"></class>
+        </classes>
+    </test>
+    <test name="Remove from Page Test">
+        <classes>
             <class name="org.tms.tests.RemoveFromCartPageTest"></class>
         </classes>
     </test>
